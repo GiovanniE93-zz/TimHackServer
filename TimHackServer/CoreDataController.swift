@@ -23,9 +23,17 @@ class CoreDataController {
         
     }
     
-    func saveTotem() {
+    func addTotem(latitude: Double, longitude: Double, title: String, city: String) {
         
 //        save a new record
+        
+        let totem = Totem(context: self.context)
+        totem.name = title
+        totem.latitude = latitude
+        totem.longitude = longitude
+        totem.city = city
+        saveTotem()
+        
         
     }
     
@@ -38,6 +46,16 @@ class CoreDataController {
     func deleteTotem() {
         
 //        delete an existing totem
+        
+    }
+    
+    func saveTotem() {
+        
+        do {
+            try self.context.save()
+        } catch {
+            print("Errore!")
+        }
         
     }
     
