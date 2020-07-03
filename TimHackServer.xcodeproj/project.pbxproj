@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D7D452124AF3712002C1A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D452024AF3712002C1A8E /* AppDelegate.swift */; };
+		8D7D452324AF3712002C1A8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D452224AF3712002C1A8E /* SceneDelegate.swift */; };
+		8D7D452524AF3712002C1A8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D452424AF3712002C1A8E /* ViewController.swift */; };
+		8D7D452824AF3712002C1A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7D452624AF3712002C1A8E /* Main.storyboard */; };
+		8D7D452B24AF3712002C1A8E /* TimHackServer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D452924AF3712002C1A8E /* TimHackServer.xcdatamodeld */; };
+		8D7D452D24AF3712002C1A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7D452C24AF3712002C1A8E /* Assets.xcassets */; };
+		8D7D453024AF3712002C1A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7D452E24AF3712002C1A8E /* LaunchScreen.storyboard */; };
+		8D7D453A24AF3721002C1A8E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7D453924AF3721002C1A8E /* CloudKit.framework */; };
+		8D7D454124AF38C7002C1A8E /* Totem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D453F24AF38C7002C1A8E /* Totem+CoreDataClass.swift */; };
+		8D7D454224AF38C7002C1A8E /* Totem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D454024AF38C7002C1A8E /* Totem+CoreDataProperties.swift */; };
+		8D7D454424AF3900002C1A8E /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D454324AF3900002C1A8E /* CoreDataController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D7D451D24AF3712002C1A8E /* TimHackServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimHackServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7D452024AF3712002C1A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D7D452224AF3712002C1A8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8D7D452424AF3712002C1A8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D7D452724AF3712002C1A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D7D452A24AF3712002C1A8E /* TimHackServer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimHackServer.xcdatamodel; sourceTree = "<group>"; };
+		8D7D452C24AF3712002C1A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D7D452F24AF3712002C1A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D7D453124AF3712002C1A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D7D453724AF371F002C1A8E /* TimHackServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimHackServer.entitlements; sourceTree = "<group>"; };
+		8D7D453924AF3721002C1A8E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8D7D453F24AF38C7002C1A8E /* Totem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Totem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8D7D454024AF38C7002C1A8E /* Totem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Totem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8D7D454324AF3900002C1A8E /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D7D451A24AF3712002C1A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7D453A24AF3721002C1A8E /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D7D451424AF3712002C1A8E = {
+			isa = PBXGroup;
+			children = (
+				8D7D451F24AF3712002C1A8E /* TimHackServer */,
+				8D7D451E24AF3712002C1A8E /* Products */,
+				8D7D453824AF3721002C1A8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D7D451E24AF3712002C1A8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D451D24AF3712002C1A8E /* TimHackServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D7D451F24AF3712002C1A8E /* TimHackServer */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D453F24AF38C7002C1A8E /* Totem+CoreDataClass.swift */,
+				8D7D454024AF38C7002C1A8E /* Totem+CoreDataProperties.swift */,
+				8D7D453724AF371F002C1A8E /* TimHackServer.entitlements */,
+				8D7D452024AF3712002C1A8E /* AppDelegate.swift */,
+				8D7D452224AF3712002C1A8E /* SceneDelegate.swift */,
+				8D7D452424AF3712002C1A8E /* ViewController.swift */,
+				8D7D454324AF3900002C1A8E /* CoreDataController.swift */,
+				8D7D452624AF3712002C1A8E /* Main.storyboard */,
+				8D7D452C24AF3712002C1A8E /* Assets.xcassets */,
+				8D7D452E24AF3712002C1A8E /* LaunchScreen.storyboard */,
+				8D7D453124AF3712002C1A8E /* Info.plist */,
+				8D7D452924AF3712002C1A8E /* TimHackServer.xcdatamodeld */,
+			);
+			path = TimHackServer;
+			sourceTree = "<group>";
+		};
+		8D7D453824AF3721002C1A8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D453924AF3721002C1A8E /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D7D451C24AF3712002C1A8E /* TimHackServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D7D453424AF3712002C1A8E /* Build configuration list for PBXNativeTarget "TimHackServer" */;
+			buildPhases = (
+				8D7D451924AF3712002C1A8E /* Sources */,
+				8D7D451A24AF3712002C1A8E /* Frameworks */,
+				8D7D451B24AF3712002C1A8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimHackServer;
+			productName = TimHackServer;
+			productReference = 8D7D451D24AF3712002C1A8E /* TimHackServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D7D451524AF3712002C1A8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Giovanni Erpete";
+				TargetAttributes = {
+					8D7D451C24AF3712002C1A8E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 8D7D451824AF3712002C1A8E /* Build configuration list for PBXProject "TimHackServer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D7D451424AF3712002C1A8E;
+			productRefGroup = 8D7D451E24AF3712002C1A8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D7D451C24AF3712002C1A8E /* TimHackServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D7D451B24AF3712002C1A8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7D453024AF3712002C1A8E /* LaunchScreen.storyboard in Resources */,
+				8D7D452D24AF3712002C1A8E /* Assets.xcassets in Resources */,
+				8D7D452824AF3712002C1A8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D7D451924AF3712002C1A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7D454124AF38C7002C1A8E /* Totem+CoreDataClass.swift in Sources */,
+				8D7D452524AF3712002C1A8E /* ViewController.swift in Sources */,
+				8D7D452124AF3712002C1A8E /* AppDelegate.swift in Sources */,
+				8D7D454424AF3900002C1A8E /* CoreDataController.swift in Sources */,
+				8D7D454224AF38C7002C1A8E /* Totem+CoreDataProperties.swift in Sources */,
+				8D7D452B24AF3712002C1A8E /* TimHackServer.xcdatamodeld in Sources */,
+				8D7D452324AF3712002C1A8E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D7D452624AF3712002C1A8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D7D452724AF3712002C1A8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D7D452E24AF3712002C1A8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D7D452F24AF3712002C1A8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D7D453224AF3712002C1A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D7D453324AF3712002C1A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D7D453524AF3712002C1A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimHackServer/TimHackServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6XR24989A;
+				INFOPLIST_FILE = TimHackServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Giovanni.TimHackServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D7D453624AF3712002C1A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimHackServer/TimHackServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6XR24989A;
+				INFOPLIST_FILE = TimHackServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Giovanni.TimHackServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D7D451824AF3712002C1A8E /* Build configuration list for PBXProject "TimHackServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D7D453224AF3712002C1A8E /* Debug */,
+				8D7D453324AF3712002C1A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D7D453424AF3712002C1A8E /* Build configuration list for PBXNativeTarget "TimHackServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D7D453524AF3712002C1A8E /* Debug */,
+				8D7D453624AF3712002C1A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8D7D452924AF3712002C1A8E /* TimHackServer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D7D452A24AF3712002C1A8E /* TimHackServer.xcdatamodel */,
+			);
+			currentVersion = 8D7D452A24AF3712002C1A8E /* TimHackServer.xcdatamodel */;
+			path = TimHackServer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8D7D451524AF3712002C1A8E /* Project object */;
+}
