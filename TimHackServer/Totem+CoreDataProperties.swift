@@ -13,8 +13,10 @@ import CoreData
 
 extension Totem {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Totem> {
-        return NSFetchRequest<Totem>(entityName: "Totem")
+    @nonobjc public class func getListItemFetchRequest() -> NSFetchRequest<Totem> {
+        let request = Totem.fetchRequest() as! NSFetchRequest<Totem>
+        request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        return request
     }
 
     @NSManaged public var name: String?

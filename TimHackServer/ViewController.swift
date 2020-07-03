@@ -18,9 +18,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     let coreDataController = CoreDataController.shared
     
+    override func viewWillAppear(_ animated: Bool) {
+        coreDataController.fetchTotems()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         
         self.myMapView.delegate = self
         self.managerPisition = CLLocationManager()
@@ -60,6 +65,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         myMapView.addAnnotation(annotation)
         
         self.coreDataController.addTotem(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude, title: self.titleTextField.text ?? "", city: "Acerra")
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        self.view.resignFirstResponder()
         
     }
     

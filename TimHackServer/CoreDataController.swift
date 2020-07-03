@@ -37,15 +37,85 @@ class CoreDataController {
         
     }
     
-    func modifyTotem() {
+    func fetchTotems() {
+        
+        let request = Totem.getListItemFetchRequest()
+        
+        do {
+            let result = try self.context.fetch(request)
+            for data in result {
+                print("[FetchTotems]: name: \(data.name!)")
+            }
+        } catch {
+            print("[FetchTotems]: Error!")
+        }
+    }
+    
+    func modifyTotem(name: String) {
         
 //        modify an existing record
+        let i = findTotem(name: name)
+        
         
     }
     
-    func deleteTotem() {
+    func deleteTotem(name: String) {
         
 //        delete an existing totem
+        let i = findTotem(name: name)
+        
+        let request = Totem.getListItemFetchRequest()
+        
+        do {
+            let results = try self.context.fetch(request)
+            let listItem = results[i]
+            self.context.delete(listItem)
+            
+        } catch {
+            print("[DeleteItem]: Error!")
+        }
+        
+    }
+    
+    func deleteAllTotems() {
+        let request = Totem.getListItemFetchRequest()
+        
+        do {
+            let results = try self.context.fetch(request)
+            for elem in results {
+                self.context.delete(elem)
+            }
+        } catch {
+            print("[DeleteAllTotems]: Error!")
+        }
+    }
+    
+    func findTotem(name: String) -> Int {
+        
+        var i = 0
+        var trovato = false
+        let request = Totem.getListItemFetchRequest()
+        
+        do {
+            let results = try self.context.fetch(request)
+            for elem in results {
+                if(elem.name == name && !trovato) {
+                    trovato = true
+                    print("[FindTotem] \(name) trovato!")
+                } else {
+                    i += 1
+                }
+            }
+        } catch {
+            print("[FindTotem] Error!")
+        }
+        
+        if(!trovato) {
+            print("[FindTotem] \(name) non trovato!")
+            i = -1
+        }
+        
+        return i
         
     }
     
