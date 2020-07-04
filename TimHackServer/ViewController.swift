@@ -17,6 +17,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var titleTextField: UITextField!
     
     let coreDataController = CoreDataController.shared
+    let apiManager = APIManager.getSingleton()
     
     override func viewWillAppear(_ animated: Bool) {
         coreDataController.fetchTotems()
@@ -64,7 +65,15 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         annotation.coordinate = self.myMapView.centerCoordinate
         myMapView.addAnnotation(annotation)
         
-        self.coreDataController.addTotem(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude, title: self.titleTextField.text ?? "", city: "Acerra")
+        var city = ""
+        geocode(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude, completion: {placemarks, errors in
+            print("[Geocode] \(placemarks?.first?.locality ?? "")")
+            city = placemarks?.first?.locality ?? ""
+        })
+        
+        self.apiManager.getData(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude)
+        
+        self.coreDataController.addTotem(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude, title: self.titleTextField.text ?? "", city: city)
         
     }
     
@@ -72,6 +81,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         self.view.resignFirstResponder()
         
+    }
+    
+    func geocode(latitude: Double, longitude: Double, completion: @escaping (_ placemark: [CLPlacemark]?, _ error: Error?) -> Void)  {
+        CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: latitude, longitude: longitude)) { placemark, error in
+            guard let placemark = placemark, error == nil else {
+                completion(nil, error)
+                return
+            }
+            completion(placemark, nil)
+        }
     }
     
 }

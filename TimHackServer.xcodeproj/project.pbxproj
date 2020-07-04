@@ -18,6 +18,8 @@
 		8D7D454124AF38C7002C1A8E /* Totem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D453F24AF38C7002C1A8E /* Totem+CoreDataClass.swift */; };
 		8D7D454224AF38C7002C1A8E /* Totem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D454024AF38C7002C1A8E /* Totem+CoreDataProperties.swift */; };
 		8D7D454424AF3900002C1A8E /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D454324AF3900002C1A8E /* CoreDataController.swift */; };
+		8D8FA3D524B0606A00B73E63 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8FA3D424B0606A00B73E63 /* APIModel.swift */; };
+		8D8FA3D724B061B200B73E63 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8FA3D624B061B200B73E63 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		8D7D453F24AF38C7002C1A8E /* Totem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Totem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8D7D454024AF38C7002C1A8E /* Totem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Totem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8D7D454324AF3900002C1A8E /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		8D8FA3D424B0606A00B73E63 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		8D8FA3D624B061B200B73E63 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 		8D7D451F24AF3712002C1A8E /* TimHackServer */ = {
 			isa = PBXGroup;
 			children = (
+				8D8FA3D624B061B200B73E63 /* APIManager.swift */,
+				8D8FA3D424B0606A00B73E63 /* APIModel.swift */,
 				8D7D453F24AF38C7002C1A8E /* Totem+CoreDataClass.swift */,
 				8D7D454024AF38C7002C1A8E /* Totem+CoreDataProperties.swift */,
 				8D7D453724AF371F002C1A8E /* TimHackServer.entitlements */,
@@ -167,7 +173,9 @@
 				8D7D454124AF38C7002C1A8E /* Totem+CoreDataClass.swift in Sources */,
 				8D7D452524AF3712002C1A8E /* ViewController.swift in Sources */,
 				8D7D452124AF3712002C1A8E /* AppDelegate.swift in Sources */,
+				8D8FA3D724B061B200B73E63 /* APIManager.swift in Sources */,
 				8D7D454424AF3900002C1A8E /* CoreDataController.swift in Sources */,
+				8D8FA3D524B0606A00B73E63 /* APIModel.swift in Sources */,
 				8D7D454224AF38C7002C1A8E /* Totem+CoreDataProperties.swift in Sources */,
 				8D7D452B24AF3712002C1A8E /* TimHackServer.xcdatamodeld in Sources */,
 				8D7D452324AF3712002C1A8E /* SceneDelegate.swift in Sources */,
