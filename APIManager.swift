@@ -29,8 +29,30 @@ public class APIManager : NSObject, URLSessionDelegate {
         var request = URLRequest(url: URL(string: "https://hackathon.tim.it/airquality/latest?latitude=\(latitude)&longitude=\(longitude)")!)
         request.addValue(token, forHTTPHeaderField: "apikey")
         request.httpMethod = "GET"
+        
         NSURLConnection.sendAsynchronousRequest(request, queue: .main) { (response, data, error) in
-            print("response: \(response)")
+            
+            if let err = error {
+                print("[getData] error: \(err)")
+            }
+            
+            print("[getData] data: \(data! as NSData)")
+            self.readJSON(data: data!)
+        }
+        
+    }
+    
+    func readJSON (data: Data) {
+        
+        do {
+            let decoder = JSONDecoder()
+            let pollutionDate = try decoder.decode(AirQualityData.self, from: data)
+            
+            airQualityData = pollutionDate
+            print("[readJSON] airQualityData: \(airQualityData!)")
+            
+        }catch {
+            print("[ReadJSON] error! \(error)")
         }
         
     }

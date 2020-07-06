@@ -10,7 +10,6 @@ import Foundation
 
 struct Pollutions : Codable {
     
-    let id : Int?
     let co : String?
     let so2 : String?
     let o3 : String?
@@ -23,10 +22,9 @@ struct Pollutions : Codable {
 
 struct AirQualityData : Codable {
     
-    let id : Int?
     let iqaValue : String?
-    let pollution : Pollutions?
-    let timestrap : String?
+    let pollutants : Pollutions?
+    let timestamp : Double?
     
 }
 
